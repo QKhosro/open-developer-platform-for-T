@@ -17,4 +17,7 @@ if [ -f "$CONTRIBUTING_SRC" ]; then
     sed 1d $CONTRIBUTING_SRC >> $TMP_FILE
     cp -f $TMP_FILE $CONTRIBUTING_DEST
     rm -f $TMP_FILE
-fi
+if [ -f "$CONTRIBUTING_SRC" ]; then
+    sed 1d $CONTRIBUTING_SRC >> $TMP_FILE
+    cp -f $TMP_FILE $CONTRIBUTING_DEST
+    rm -f $TMP_FILE
