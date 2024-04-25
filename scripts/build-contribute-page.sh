@@ -8,8 +8,8 @@ TMP_FILE=/tmp/page-prefix.tmp
 
 rm -f $TMP_FILE
 echo '---
-id: contributing
-title: Contributing
+title: contributing
+id: Contributing
 ---
 ' > $TMP_FILE
 
