@@ -8,8 +8,8 @@ TMP_FILE=/tmp/page-prefix.tmp
 
 rm -f $TMP_FILE
 echo '---
-title: contributing
-id: Contributing
+id: contributing
+title: Contributing
 ---
 ' > $TMP_FILE
 
@@ -17,7 +17,4 @@ if [ -f "$CONTRIBUTING_SRC" ]; then
     sed 1d $CONTRIBUTING_SRC >> $TMP_FILE
     cp -f $TMP_FILE $CONTRIBUTING_DEST
     rm -f $TMP_FILE
-if [ -f "$CONTRIBUTING_SRC" ]; then
-    sed 1d $CONTRIBUTING_SRC >> $TMP_FILE
-    cp -f $TMP_FILE $CONTRIBUTING_DEST
-    rm -f $TMP_FILE
+fi
